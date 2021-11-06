@@ -1,13 +1,12 @@
 import express from "express"
 import config from "config"
 import mongoose from "mongoose"
-import router from "./routes";
-
+import router from "./routes"
 
 const app = express()
 
 app.use(express.json())
-app.use('', router)
+app.use("", router)
 
 const PORT = config.get("PORT") || 5000
 

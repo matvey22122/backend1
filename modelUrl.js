@@ -1,19 +1,19 @@
-import {Schema, model} from 'mongoose'
+import { Schema, model } from "mongoose"
 
 const schema = new Schema({
   url: {
     type: String,
-    required: true
+    required: true,
   },
   views: {
     type: Number,
     required: true,
-    default: 0
+    default: 0,
   },
   uuid: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 
-export default model('Url', schema)
+export default model("Url", schema)
